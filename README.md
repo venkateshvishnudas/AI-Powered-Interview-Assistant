@@ -39,17 +39,24 @@ Vite → build tool
 Netlify → deployment
 
 Project Structure
+
 src/
 ├── components/    → UI parts like ChatWindow, ResumeUpload, CandidatesTable
 ├── pages/         → IntervieweePage (candidate), InterviewerPage (dashboard)
 ├── slices/        → Redux slices (resume, interview, candidates)
 ├── utils/         → Helpers (scoring, parsing)
 └── store.ts       → Redux store setup
+
 How to Run It
+
 Clone this repo
+
 git clone https://github.com/<your-username>/AI-Powered-Interview-Assistant.git
+
 cd AI-Powered-Interview-Assistant
+
 Install dependencies
+
 npm install
 
 This will install:
@@ -69,8 +76,11 @@ vite (development/build tool)
 typescript + @types/* packages (TypeScript support)
 
 Run locally
+
 npm run dev
+
 Build for production
+
 npm run build
 
 Deployment
