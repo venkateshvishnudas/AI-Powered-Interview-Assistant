@@ -47,8 +47,8 @@ How to Run It
 
 Clone this repo:
 
-git clone https://github.com/<your-username>/interview-assistant.git
-cd interview-assistant
+git clone https://github.com/<your-username>/AI-Powered-Interview-Assistant
+cd ai-interview-assistant
 
 Install dependencies:
 
