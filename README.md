@@ -51,7 +51,7 @@ How to Run It
 
 Clone this repo
 
-git clone https://github.com/<your-username>/AI-Powered-Interview-Assistant.git
+git clone https://github.com/venkateshvishnudas/AI-Powered-Interview-Assistant.git
 
 cd AI-Powered-Interview-Assistant
 
