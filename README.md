@@ -4,19 +4,23 @@ This is a simple interview assistant web app built with React, Redux Toolkit, an
 
 It lets candidates upload resumes, answer timed interview questions in a chat interface, and gives recruiters a dashboard to review scores, summaries, and candidate details.
 
-
 What it Does
 
-Upload a resume (PDF/DOCX) and pull out basic info like name, email, and phone.
+Resume Upload: Upload a resume (PDF/DOCX) and extract basic info like name, email, and phone.
 
-Chat-style interview: candidates answer questions while a timer runs.
+Chat-style Interview: Candidates answer questions while a timer runs.
 
-Questions are marked as Easy (20s), Medium (60s), or Hard (120s).
+Timed Questions:
 
-At the end, the candidate gets a score + summary.
+Easy → 20s
 
-Recruiter Dashboard shows all candidates, their scores, and interview histories.
+Medium → 60s
 
+Hard → 120s
+
+Score + Summary: At the end, the candidate gets a score and summary.
+
+Recruiter Dashboard: Shows all candidates, their scores, and interview histories.
 
 Built With
 
@@ -32,26 +36,20 @@ Recharts → skill radar visualization
 
 Vite → build tool
 
-
 Netlify → deployment
-
 
 Project Structure
 src/
- ├── components/    → UI parts like ChatWindow, ResumeUpload, CandidatesTable
- ├── pages/         → IntervieweePage (candidate), InterviewerPage (dashboard)
- ├── slices/        → Redux slices (resume, interview, candidates)
- ├── utils/         → Helpers (scoring, parsing)
- └── store.ts       → Redux store setup
+├── components/    → UI parts like ChatWindow, ResumeUpload, CandidatesTable
+├── pages/         → IntervieweePage (candidate), InterviewerPage (dashboard)
+├── slices/        → Redux slices (resume, interview, candidates)
+├── utils/         → Helpers (scoring, parsing)
+└── store.ts       → Redux store setup
 How to Run It
-
-Clone this repo:
-
-git clone https://github.com/<your-username>/AI-Powered-Interview-Assistant
-cd ai-interview-assistant
-
-Install dependencies:
-
+Clone this repo
+git clone https://github.com/<your-username>/AI-Powered-Interview-Assistant.git
+cd AI-Powered-Interview-Assistant
+Install dependencies
 npm install
 
 This will install:
@@ -70,17 +68,14 @@ vite (development/build tool)
 
 typescript + @types/* packages (TypeScript support)
 
-Run locally:
-
+Run locally
 npm run dev
-
-Build for production:
-
+Build for production
 npm run build
 
 Deployment
 
-I used Netlify for deployment.
+Steps for deploying to Netlify:
 
 Push your project to GitHub.
 
@@ -90,7 +85,7 @@ Set build command: npm run build
 
 Set publish directory: dist/
 
-Deploy → Done 
+Deploy → Done
 
 What it Looks Like
 
@@ -100,4 +95,4 @@ Chat interview → timed questions with countdown.
 
 Candidate summary → score + feedback.
 
-Dashboard → recruiter view of all candidates + details.
+Dashboard → recruiter view of all candidates and details.
